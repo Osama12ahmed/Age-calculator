@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merienda:wght@300..900&display=swap');
+
+* {
+    font-family: "Merienda", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.616), black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+body::after {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    z-index: -1;
+    clip-path: circle(45% at right 90%);
+}
+
+.title {
+    font-size: 53px;
+    text-shadow: 1px 2px 5px rgb(0, 0, 0);
+    color: white;
+}
+
+.container {
+    width: 510px;
+    height: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    /* background-color: rgb(255, 255, 255, 0.1); */
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.form {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    height: 31px;
+    width: 430px;
+    margin: 7px 0;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.445);
+    font-size: 16px;
+}
+
+.but {
+    width: 410px;
+    display: flex;
+    margin-top: 25px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button {
+    width: 180px;
+    height: 35px;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.445);
+    font-size: 15px;
+
+}
+
+.age {
+    margin-top: 30px;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#years,
+#months,
+#days,
+#weeks {
+    width: 190px;
+    height: 190px;
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    backdrop-filter: blur(10px);
+
+    border-radius: 15px;
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.884);
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.9s;
+}
+
+#years:hover,
+#months:hover,
+#days:hover,
+#weeks:hover {
+    transform: scale(1.1);
+
+}
+
+#scren1,
+#scren2,
+#scren3,
+#scren4 {
+    width: 150px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 38px;
+}

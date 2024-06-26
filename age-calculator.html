@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGE CALCULATER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">AGE CALCULATER</h1>
+    <div class="container">
+        <div class="form">
+            <input type="text" placeholder="Year" id="year">
+            <input type="text" placeholder="Month" id="month">
+            <input type="text" placeholder="Day" id="day">
+            <div class="but">
+                <button id="submit" onclick="calculateAge()">Submit</button>
+                <button id="clear" onclick="clearFields()">Clear</button>
+            </div>
+        </div>
+    </div>
+    <div class="age">
+        <div id="years">
+            <div id="scren1"></div>
+            <h2>Years</h2>
+        </div>
+        <div id="months">
+            <div id="scren2"></div>
+            <h2>Months</h2>
+        </div>
+        <div id="weeks">
+            <div id="scren3"></div>
+            <h2>Weeks</h2>
+        </div>
+        <div id="days">
+            <div id="scren4"></div>
+            <h2>Days</h2>
+        </div>
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
